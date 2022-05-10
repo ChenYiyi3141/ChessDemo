@@ -1,0 +1,19 @@
+import Music.Music;
+import view.ChessGameFrame;
+
+import javax.swing.*;
+
+public class Main123 {
+    public static void main(String[] args) {
+
+        SwingUtilities.invokeLater(() -> {
+            ChessGameFrame mainFrame = new ChessGameFrame(1000, 760);
+
+            mainFrame.setVisible(true);
+            Music musicPlayer = new Music();
+            musicPlayer.play();
+
+
+        });
+    }
+}
